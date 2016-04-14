@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/business1"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Login Panel"
+            android:textColor="#622C2C"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Phone"
+            android:textColor="#622C2C"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#622C2C"
+            android:layout_marginTop="5px"/>
+
+        <EditText
+            android:id="@+id/loginPhone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <!--  Error message -->
+        <TextView android:id="@+id/login_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#e30000"
+            android:padding="10dip"
+            android:textStyle="bold"/>
+
+        <!--  Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="#622C2C"
+            android:textAllCaps="false"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <!--  Link to Registration Screen -->
+        <Button
+            android:id="@+id/btnLinkToRegisterScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:textAllCaps="false"
+            android:text="I don&apos;t have account. Register Me!"
+            android:textColor="#8888ff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>
